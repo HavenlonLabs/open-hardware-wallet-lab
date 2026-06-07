@@ -255,7 +255,9 @@
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
       "Havenlon_Symbol_Library",
-      "Havenlon_Symbol_Connector"
+      "Havenlon_Symbol_Connector",
+      "Havenlon_Symbol_Module",
+      "Havenlon_Symbol_IC"
     ]
   },
   "meta": {
@@ -415,17 +417,17 @@
     "top_level_sheets": [
       {
         "filename": "open-hardware-wallet-v1.kicad_sch",
-        "name": "根目录",
+        "name": "Main",
         "uuid": "e88f4761-fca7-4771-b266-91c06262a01a"
       }
     ],
-    "used_designators": "C5-6,R5-11,#PWR11-20,U2-3",
+    "used_designators": "J2,L1,R27-29,U6,Y1,TP1-4,C22-34,#PWR59-78",
     "variants": []
   },
   "sheets": [
     [
       "e88f4761-fca7-4771-b266-91c06262a01a",
-      "根目录"
+      "Main"
     ]
   ],
   "text_variables": {},

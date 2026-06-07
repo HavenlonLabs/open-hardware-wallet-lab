@@ -62,12 +62,89 @@ Status:
 
 ```text
 Stage 2: Battery Charging, Voltage Monitoring & SPI Flash
+Status: Completed
+```
+
+### Stage 3: Bluetooth, User Input, LEDs & Mechanical Basics
+
+Current hardware focus:
+
+```text
+Bluetooth connectivity
+User buttons and keypad
+Status LEDs
+Mechanical mounting and test points
+```
+
+Status:
+
+```text
+Stage 3: Bluetooth, Input, LEDs & Mechanical
+Status: Completed
+```
+
+### Stage 4: OLED Display & SE05X Secure Element
+
+Current hardware focus:
+
+```text
+OLED 1.3-inch FPC display interface
+SE05X secure element interface
+Auxiliary decoupling and pull-up components
+```
+
+Status:
+
+```text
+Stage 4: OLED Display & SE05X Secure Element
+Status: Completed
+```
+
+### Stage 5: MCU & System Essentials
+
+Current hardware focus:
+
+```text
+STM32L476RET6 MCU minimum system
+Debug and boot configuration
+NRST reset circuitry
+Analog power filter
+Crystal oscillator
+Decoupling capacitors
+Test points for measurement
+```
+
+Status:
+
+```text
+Stage 5: MCU & System Essentials
+Status: Completed
+```
+
+### Stage 6: PCB Layout
+
+The project has now entered the **PCB layout and routing stage**.
+
+Current focus:
+
+```text
+Placement of components
+Routing of critical power and signal traces
+Ground and analog plane design
+Test point accessibility
+Preparation for prototype manufacturing
+```
+
+Status:
+
+```text
+Stage 6: PCB Layout
 Status: Work in progress
 ```
 
-These blocks are still simple, but they are critical for making the device more practical and independent.
+These steps mark the transition from schematic design to physical board realization.
 
-A hardware wallet should not only receive power from USB-C. It should also support a battery path, battery status detection, voltage monitoring, and persistent storage for device-side data.
+这些步骤标志着项目从原理图设计向实际 PCB 制造过渡。
 
 ## Project repository
 
@@ -75,7 +152,11 @@ The project repository is available here:
 
 https://github.com/HavenlonLabs/open-hardware-wallet-lab
 
-The repository will be updated step by step as the schematic, PCB, firmware, enclosure, and documentation evolve.
+项目仓库地址：
+
+https://github.com/HavenlonLabs/open-hardware-wallet-lab
+
+---
 
 ## Repository structure
 
@@ -88,41 +169,7 @@ tools/       Helper scripts and transaction tools
 images/      Prototype and assembly images
 ```
 
-## Hardware status
-
-The hardware design now covers both the initial power stage and early battery and storage modules.
-
-Current focus:
-
-```text
-Power input
-Power protection
-Battery charging path
-Battery voltage monitoring
-External SPI Flash
-LDO regulation
-```
-
-The schematic and PCB files are still not production-ready.
-
-At this stage, the goal is not to produce a finished wallet, but to document the engineering process from the first power block to a complete prototype.
-
-## Planned hardware blocks
-
-The project will continue to add hardware blocks gradually.
-
-Planned or upcoming areas include:
-
-```text
-MCU minimum system
-Reset and boot configuration
-Secure element interface
-Display interface
-Buttons and user confirmation path
-PCB layout
-Enclosure alignment
-Firmware bring-up
-```
+---
 
 ## Safety notice
 
@@ -134,6 +181,16 @@ Do not treat the current schematic, firmware, or enclosure files as production-r
 
 Security hardware requires careful review, testing, manufacturing control, firmware validation, and threat modeling before it can be used in real environments.
 
+该项目仅用于学习、研究及开源硬件探索。
+
+不要使用当前设计存储真实资产。
+
+当前原理图、固件或外壳文件不能视为可直接使用的安全硬件。
+
+真正的安全硬件需要严格的审查、测试、生产控制、固件验证和威胁建模，才能投入真实环境使用。
+
+---
+
 ## Relationship to Havenlon
 
 This repository is an open hardware learning lab.
@@ -144,6 +201,8 @@ Havenlon focuses on hardware-enforced execution control for AI agents, Web3 trea
 
 This lab documents an earlier and simpler foundation: how hardware-based key protection and signing devices are built from the ground up.
 
+---
+
 ## License
 
-See [LICENSE](LICENSE).
+See [LICENSE](LICENSE)
