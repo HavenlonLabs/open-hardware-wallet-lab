@@ -144,15 +144,9 @@ Status: Work in progress
 
 These steps mark the transition from schematic design to physical board realization.
 
-这些步骤标志着项目从原理图设计向实际 PCB 制造过渡。
-
 ## Project repository
 
 The project repository is available here:
-
-https://github.com/HavenlonLabs/open-hardware-wallet-lab
-
-项目仓库地址：
 
 https://github.com/HavenlonLabs/open-hardware-wallet-lab
 
